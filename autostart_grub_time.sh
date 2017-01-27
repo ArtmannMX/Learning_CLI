@@ -12,3 +12,18 @@ sudo nano /etc/default/grub
 # GRUB_TIMEOUT=10
 # Para anular el tiempo de espera se escribe  -1
 # GRUB_TIMEOUT=-1
+
+#Para que las modificaciones hagan efecto se ejucta el siguiente comando:
+
+sudo update-grub
+
+# Este comando no es mas que un script que hace referencia a otro comando:
+# grub-mkconfig
+# En caso de que el sistema haya sido instalado en mod efi se ejecuta lo siguiente:
+
+sudo grub-mkconfig -o /boot/efi/EFI/ubuntu/grub.cfg
+
+# En modo legacy:
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
