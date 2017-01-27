@@ -4,9 +4,8 @@
 
 sudo tar -xvzf paquete.tgz
 
-# Para acortar el tiempo de digitación podemos escribir un script con lo siguiente:
+# Para acortar el tiempo de digitación podemos escribir un script con el nombre que deseemos, yo le pondré des,  con lo siguiente:
 
 sudo tar -xvzf $0
 
-# El $0 se ocupa como variable de entrada para escribir el archivo a descomprimir
-# Esto se guarda en un archvio con extensión
+# El $0 se ocupa como variable de entrada para escribir el archivo a descomprimir, 
